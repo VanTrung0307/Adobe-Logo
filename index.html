@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobe Logo</title>
+
+    <style>
+      body {
+        margin: 20px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: flex-start;
+      }
+
+      .adobe {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+
+      .adobe div {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 135px solid white;
+        position: relative;
+        top: -32px;
+        left: 0;
+      }
+
+      .adobe div::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 37px solid #fa0c00;
+        position: relative;
+        top: 50px;
+        left: -15px;
+      }
+
+      .adobe div::after {
+        content: '';
+        width: 15px;
+        height: 20px;
+        display: block;
+        background: #fa0c00;
+        position: relative;
+        top: 86px;
+        left: 4px;
+        transform: skewX(22deg);
+      }
+
+      h1 {
+        color: red;
+        font-size: 80px;
+        margin: 0;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="adobe">
+      <div></div>
+    </div>
+    <h1>Adobe</h1>
+  </body>
+</html>
